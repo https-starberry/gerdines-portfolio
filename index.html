@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+    <html lang = "en">
+
+        <head>
+            <meta charset = "UTF-8">
+            <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+            <title> Home | Gerdine's Website </title>
+
+            <link rel = "stylesheet" type = "text/css" href = "navbar.css">
+            <link rel = "shortcut icon" type = "image/x-icon" href = "favicon-32x32.png">
+
+        </head>
+
+        <body>
+            
+            <style>
+
+                /* elements */
+
+                p {
+
+                    font-family: Helvetica, Arial, sans-serif;
+
+                }
+
+                /* elements */
+
+
+                /* classes */
+
+                .hero-img {
+
+                    background-image: url("Gerdine_and_Adante_Sunglasses.JPG");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    position: relative;
+                    min-height: 400px;
+                    z-index: -1;
+                    overflow: hidden;
+
+                }
+
+                .hero-img-text {
+
+                    text-align: center;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: #FFFBF5;
+
+
+                }
+
+                .darken {
+
+                    background-color: black;
+                    width: 100%;
+                    min-height: 400px;
+                    opacity: 40%;
+
+                }
+
+                h1.font-size {
+
+                    font-size: 70px;
+
+                }
+
+                p.font-size {
+
+                    font-size: 20px;
+
+                }
+
+                .centerseventy {
+
+                    width: 70%;
+                    display: block;
+                    margin: 40px auto 80px auto;
+
+                }
+
+                .nav-item:nth-child(1) {
+
+                    font-weight: bold;
+                    font-size: larger;
+
+                }
+
+
+                /* classes */
+
+                /* media query */
+
+                @media(max-width: 768px) {
+
+                /* elements */
+
+                    body {
+
+                        background-color: #FFFBF5;
+                        color: #1B1A55;
+
+                    }
+
+                    /* elements */
+
+                    /* classes */
+
+                    .hero-img {
+
+                        min-height: 200px;
+
+                    }
+
+                    .darken {
+                        min-height: 200px;
+                    }
+
+
+                    h1.font-size {
+
+                        font-size: 30px;
+
+                    }
+
+                    p.font-size {
+
+                        font-size: 15px;
+
+                    }
+
+                    .centerseventy {
+
+                        width: 80%;
+                        display: block;
+                        margin: 40px auto;
+
+                    }
+
+                    /* classes */
+
+                }
+
+                /* media query */
+
+            </style>
+
+            <header>
+                <nav class = "navbar">
+
+                    <a href = "index.html" class = "nav-branding"><img src = "starfruit_pixilart_transparent.png" class = "icon"></a>
+
+                    <ul class = "nav-menu">
+
+                        <li class= "nav-item">
+                            <a href = "index.html" class = "nav-link"> <span class = "nav"> Home </span></a>
+                        </li>
+
+                        <li class= "nav-item">
+                            <a href = "resume.html" class = "nav-link"> Resume </a>
+                        </li>
+
+                        <li class= "nav-item">
+                            <a href = "certs_awards.html" class = "nav-link"> Certs & Awards </a>
+                        </li>
+
+                        <li class= "nav-item">
+                            <a href = "worksample.html" class = "nav-link"> Work Samples </a>
+                        </li>
+
+                    </ul>
+
+                    <div class = "hamburger">
+
+                        <span class = "bar"></span>
+                        <span class = "bar"></span>
+                        <span class = "bar"></span>
+
+                    </div>
+
+                </nav>
+            </header>
+
+            <script src = "script.js"> </script>
+
+            <main class = "index">
+
+                <div class = "hero-img">
+                    <div class = "darken" style = "background-color: #1B1A55;">
+                        ok
+                    </div>
+                    <div class = "hero-img-text">
+
+                        <h1 class = "font-size"> Gerdine&nbsp;Louis </h1>
+                        <p class = "font-size"> Portfolio Website </p>
+
+                    </div>
+
+                </div>
+
+                <article class = "centerseventy"> 
+
+                    <p> 
+                        
+                        My name is Gerdine. At the time of making this 
+                        website I am a junior student at Greater Lowell Technical High School
+                        with a major in Information Technology Services. I've acquired some experience
+                        with Python, HTML and CSS, Python, Data Analytics, Cybersecurity, Microsoft Access,
+                        Visual Basic, and C#. <br> <br>
+
+                        During my time here I've acquired 21 technical certifications. I've also
+                        consistently been awarded honor and high honor roll.
+
+                    </p>
+
+                </article>
+
+            </main>
+
+            <footer>
+
+                <a href = "https://www.linkedin.com/in/gerdine-louis-05ab072aa/" target = "_blank"> <div class="footer-img-linkedin"></div> </a>
+                <a href = "mailto:louisgerdine07@gmail.com" target = "_blank"> <div class="footer-img-gmail"></div> </a>
+
+            </footer>
+
+        </body>
+
+    </html>
