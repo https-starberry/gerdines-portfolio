@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>Work Samples | Gerdine's Website</title>
+
+        <link rel = "stylesheet" type = "text/css" href = "navbar.css">
+        <link rel = "shortcut icon" type = "image/x-icon" href = "favicon-32x32.png">
+
+    </head>
+
+    <body>
+
+        <style>
+
+            h1 {
+
+                text-align: center;
+
+            }
+
+            summary {
+
+                font-size: 28px;
+                font-weight: bold;
+                margin: 30px auto 30px auto;
+
+            }
+
+            img {
+
+                width: 100%;
+                border: 2px solid black;
+
+            }
+
+            figure {
+
+                /* border: 3px solid green;*/
+                width: 100%;
+
+
+            }
+
+            figcaption {
+
+                text-align: center;
+
+            }
+
+            iframe {
+                width: 100%;
+                height: 1000px;
+            }
+
+            p {
+                text-align: center;
+            }
+
+            div.footer > p {
+
+                text-align: left;
+
+            }
+
+            a > img {
+
+                border: none;
+
+            }
+
+            .grid-container {
+
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+                height: 450px;
+
+            }
+
+            .grid-child {
+                width: 100%;
+            }
+
+            /* .grid-child {
+
+                border: 1px solid red;
+            }*/
+
+            .grid-child.desc {
+
+                grid-column-start: 1;
+                grid-column-end: 3;
+
+            }
+
+            .grid-container1 {
+
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 10px;
+
+            }
+            
+            .overflow {
+                overflow: auto;
+            }
+
+            .one {
+                width: 100%;
+                display: block;
+                margin: auto;
+            }
+
+
+            @media (max-width: 768px) {
+
+                .grid-container {
+
+                    grid-template-columns: 1fr;
+                    gap: 10px;
+
+                }
+
+                .grid-child.desc {
+
+                    grid-column-start: 1;
+                    grid-column-end: 2;
+
+                }
+
+                .grid-container1 {
+
+                    grid-template-columns: 1fr;
+                    
+                }
+
+                .one {
+                    width: 60%;
+                    border: 3px solid blue;
+                }
+
+                .hide {
+
+                    display: none;
+                    visibility: hidden;
+
+                }
+
+                h1 {
+
+                    font-size: 18px;
+
+                }
+
+                h2 {
+
+                    font-size: 16px;
+
+                }
+
+                summary {
+
+                    font-size: 14px;
+                    margin: 10px auto 10px auto;
+
+                }
+
+                details {
+
+                    font-size: 12px;
+                    
+                }
+
+            }
+
+        
+
+        </style>
+
+        <header>
+            <nav class = "navbar">
+
+                <a href = "index.html" class = "nav-branding"><img src = "starfruit_pixilart_transparent.png" class = "icon"></a>
+
+                <ul class = "nav-menu">
+
+                    <li class= "nav-item">
+                        <a href = "index.html" class = "nav-link"> Home </a>
+                    </li>
+
+                    <li class= "nav-item">
+                        <a href = "resume.html" class = "nav-link"> Resume </a>
+                    </li>
+
+                    <li class= "nav-item">
+                        <a href = "certs_awards.html" class = "nav-link"> Certs&nbsp;&&nbsp;Awards </a>
+                    </li>
+
+                    <li class= "nav-item">
+                        <a href = "worksample.html" class = "nav-link"> <span class = "nav"> Work&nbsp;Samples </span></a>
+                    </li>
+
+                </ul>
+
+                <div class = "hamburger">
+
+                    <span class = "bar"></span>
+                    <span class = "bar"></span>
+                    <span class = "bar"></span>
+
+                </div>
+
+            </nav>
+        </header>
+
+        <script src = "script.js"> </script>
+
+        <main class = "centerseventy">
+
+            <div>
+
+                <h1> Work Samples </h1>
+
+            </div>
+
+            <details>
+                <summary> Fishing in Landsville </summary>
+
+                <iframe src = "https://fishinginlandsville.000webhostapp.com/index.html" alt = "Game Project Website"></iframe>
+                <p> A website made for a group game project. </p>
+
+            </details>
+
+            <details class = "hide">
+                <summary> AP Bio Summer Work Website </summary>
+
+                <iframe width="850" height="500" src="https://codehs.com/sandbox/koifishpond/ap-bio-summer-hw/embed/?display_mode=displayOnly&read_only=True&show_file_tree=False" frame-border = "0" allowfullscreen></iframe>
+                <p> A website made for my AP Bio summer work.  </p>
+            </details>
+
+            <details>
+                <summary> Dance Band (Visual Basic) </summary>
+
+                <div class = "grid-container">
+                    <div class = "grid-child overflow">
+                        <figure>
+
+                            <div class="grid-container1">
+                                <div class="grid-child1">
+                                    <img src = "app screenshots\Dance Band Form 1 Image.png" alt = "Dance Band App Form 1 UI">
+                                </div>
+
+                                <div class="grid-child1">
+                                    <img src = "app screenshots\Dance Band Form 2 Image.png" alt = "Dance Band App Form 2 UI">
+                                </div>
+                            </div>
+
+                        </figure>
+                    </div>
+
+                    <div class = "grid-child overflow">
+                        <figure>
+
+                            <img src = "app screenshots\Dance Band Form 1 Code (1).png" alt = "Dance Band Form 1 Code (1)">
+                            <img src = "app screenshots\Dance Band Form 1 Code (2).png" alt = "Dance Band Form 1 Code (2)">
+                            <img src = "app screenshots\Dance Band Form 1 Code (3).png" alt = "Dance Band Form 1 Code (3)">
+
+                            <img src = "app screenshots\Dance Band Form 2 Code (1).png" alt = "Dance Band Form 2 Code (1)">
+                            <img src = "app screenshots\Dance Band Form 2 Code (2).png" alt = "Dance Band Form 2 Code (2)">
+                            <img src = "app screenshots\Dance Band Form 2 Code (3).png" alt = "Dance Band Form 1 Code (3)">
+
+                        </figure>
+                    </div>
+
+                    <div class = "grid-child desc">
+                        <p> The most recent visual basic case (Chapter 8) completed as of 4/24/2024. </p>
+                    </div>
+
+                </div>
+
+            </details>
+
+            <details>
+                <summary> Factorial Calculator (Visual Basic) </summary>
+
+                <div class = "grid-container">
+                    <div class = "grid-child">
+                        <figure>
+                            <img src = "app screenshots\Factorial Calculator Form Image.png" alt = "Factorial Calculator Form Image" class = "one">
+
+                        </figure>
+                    </div>
+
+
+                    <div class = "grid-child overflow">
+                        <figure>
+    
+                            <img src = "app screenshots\Factorial Calculator Code (1).png" alt = "Factorial Calculator Code (1)">
+                            <img src = "app screenshots\Factorial Calculator Code (2).png" alt = "Factorial Calculator Code (2)">
+                            <img src = "app screenshots\Factorial Calculator Code (3).png" alt = "Factorial Calculator Code (3)">
+    
+                        </figure>
+                    </div>
+
+                    <div class = "grid-child desc">
+                        <p> A completed chapter 5 visual basic case. </p>
+                    </div>
+                </div>
+
+            </details>
+
+            <details>
+                <summary> Binary Clock (C#) </summary>
+
+                <div class = "grid-container">
+                    <div class = "grid-child">
+                        <figure>
+
+                            <img class = "one" src = "app screenshots\Binary Clock C Sharp Form Image.png" alt = "Binary Clock C Sharp Form Image">
+
+                        </figure>
+                    </div>
+
+                    <div class = "grid-child overflow">
+                        <figure>
+    
+                            <img src = "app screenshots\Binary Clock C Sharp Code (1).png" alt = "Binary Clock C Sharp Code (1)">
+                            <img src = "app screenshots\Binary Clock C Sharp Code (2).png" alt = "Binary Clock C Sharp Code (2)">
+                            <img src = "app screenshots\Binary Clock C Sharp Code (3).png" alt = "Binary Clock C Sharp Code (3)">
+                            <img src = "app screenshots\Binary Clock C Sharp Code (4).png" alt = "Binary Clock C Sharp Code (4)">
+                            <img src = "app screenshots\Binary Clock C Sharp Code (5).png" alt = "Binary Clock C Sharp Code (5)">
+                            <img src = "app screenshots\Binary Clock C Sharp Code (6).png" alt = "Binary Clock C Sharp Code (6)">
+                            <img src = "app screenshots\Binary Clock C Sharp Code (7).png" alt = "Binary Clock C Sharp Code (7)">
+    
+                        </figure>
+                    </div>
+
+                    <div class = "grid-child desc">
+                        <p> A completed extra credit assignment, most code ommitted as there is too much to showcase reasonably. </p>
+                    </div>
+
+                </div>
+
+            </details>
+
+        </main>
+
+        <footer>
+
+            <a href = "https://www.linkedin.com/in/gerdine-louis-05ab072aa/" target = "_blank"> <div class="footer-img-linkedin"></div> </a>
+            <a href = "mailto:louisgerdine07@gmail.com" target = "_blank"> <div class="footer-img-gmail"></div> </a>
+
+        </footer>
+
+    </body>
+
+</html>
