@@ -1,0 +1,264 @@
+/* elements */
+
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+body {
+
+    background-color: #FFFBF5;
+    color: #1B1A55;
+
+}
+
+header {
+
+    background-color: #674188;
+
+}
+
+li {
+
+    list-style: none;
+
+}
+
+a {
+
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+
+    position: fixed; /* static for smaller screens */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #674188;
+    color: white;
+    min-height: 70px;
+
+}
+
+main {
+
+    margin-bottom: 120px;
+    margin-top: 40px;
+
+}
+
+span.nav {
+
+    color: aquamarine;
+    font-weight: bold;
+    font-size: larger;
+
+}
+
+main.index {
+
+    margin-top: 0;
+
+}
+
+img.icon {
+
+    width: 50px;
+
+}
+
+.footer {
+    display: block;
+    margin: 20px;
+    /* border: 1px solid red; */
+}
+
+.footer-img-linkedin, .footer-img-gmail {
+    width: 63.5px; /* 63.5 x 54*/
+    height: 54px;
+    float: left;
+    margin: 10px 10px 15px 10px;
+    display: block;
+    
+    /* border: 1px solid blue; */
+    background-position: center;
+    background-size: contain;
+    
+}
+
+.footer-img-linkedin {
+
+    background-image: url("LI-In-Bug.png");
+    background-repeat: no-repeat;
+
+}
+
+.footer-img-gmail {
+
+    background-image: url("Gmail_Logo_64px.png");
+    background-repeat: no-repeat;
+
+}
+
+/* elements */
+
+/* classes */
+
+.centerseventy {
+
+    width: 90%;
+    display: block;
+    margin: 40px auto 120px auto;
+
+}
+
+
+.navbar {
+
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    
+}
+
+.nav-menu {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    z-index: 1;
+    
+}
+
+.nav-branding {
+
+    font-size: 2rem;
+
+}
+
+.nav-link {
+
+    transition: 0.7s ease;
+
+}
+
+.nav-link:hover {
+
+    color: #96E9C6;
+}
+
+.hamburger {
+
+    display: none;
+    cursor: pointer;
+
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+/* classes */
+
+/* media query */
+
+@media(max-width: 768px) {
+
+    .hamburger {
+
+        display: block;
+    
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+
+        opacity: 0;
+
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+
+        transform: translateY(8px) rotate(45deg);
+
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+
+        transform: translateY(-8px) rotate(-45deg);
+
+    }
+
+    .nav-menu {
+
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #827397;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+
+    }
+
+    .nav-item {
+
+        margin: 16px 0;
+
+    }
+
+
+    .nav-menu.active {
+
+        left: 0;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    }
+
+    /* elements */
+    h1 {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    summary {
+        font-size: 14px;
+    }
+
+    details {
+        font-size: 12px;
+    }
+
+    footer {
+        min-height: 50px;
+    }
+    /* elements */
+
+    .footer-img-gmail, .footer-img-linkedin {
+        width: 10%;
+        margin: auto 10px auto;
+
+    }
+
+}
+
+/* media query */
